@@ -1,0 +1,31 @@
+<?php
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormDepartments
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+?>
+<?php
+    /** @var ArchApps_ContactFormDepartments_Helper_Data $helper */
+    $helper = Mage::helper('archapps_contactformdepartments');
+?>
+<?php if ($helper->isEnabled() && ($departments = $helper->getDepartments())): ?>
+    <li>
+        <?php if ($label = $helper->getSelectLabel()): ?>
+            <label for="department" class="required"><em>*</em><?php echo $label ?></label>
+        <?php endif; ?>
+
+        <div class="input-box">
+            <select name="department" id="department" class="required-entry"
+                    title="<?php echo Mage::helper('core')->quoteEscape($helper->getSelectLabel()) ?>">
+                <?php if ($helper->getShowPlaceholderOption()): ?>
+                    <option value=""><?php echo $helper->getPlaceholderOptionText() ?></option>
+                <?php endif; ?>
+
+                <?php foreach ($departments as $id => $department): ?>
+                    <option value="<?php echo $id ?>"><?php echo $department['name'] ?></option>
+                <?php endforeach; ?>
+            </select>
+        </div>
+    </li>
+<?php endif; ?>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormDepartments
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<config>
+    <modules>
+        <ArchApps_ContactFormDepartments>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+                <Mage_Contacts />
+            </depends>
+        </ArchApps_ContactFormDepartments>
+    </modules>
+</config>

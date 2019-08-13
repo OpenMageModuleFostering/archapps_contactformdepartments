@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @category    ArchApps
+ * @package     ArchApps_ContactFormDepartments
+ * @license     https://opensource.org/licenses/osl-3.0.php OSL 3.0
+ */
+-->
+<layout>
+    <contacts_index_index>
+        <reference name="contactForm">
+            <!-- Append departments select block to contact form -->
+            <block type="core/template" as="departments"
+                   name="archapps.contactformdepartments.departments"
+                   template="archapps/contactformdepartments/departments.phtml"/>
+        </reference>
+    </contacts_index_index>
+</layout>

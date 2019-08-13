@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ArchApps_ContactFormDepartments</name>
+    <version>0.1.2</version>
+    <stability>stable</stability>
+    <license uri="https://opensource.org/licenses/osl-3.0.php">OSL 3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Extend default contact form and sort your incoming contact emails by departments.</summary>
+    <description>Contact Departments extension for Magento extends default contact form by adding departments field that helps you sort all incoming contact emails. Easily add any number of contact departments - specify department name, email address to receive emails and set display order within select field for each department. From now on, contact emails will be sent to specified department email address.</description>
+    <notes>Release of v0.1.2</notes>
+    <authors><author><name>ArchApps</name><user>ArchApps</user><email>raivis@archapps.io</email></author></authors>
+    <date>2016-05-13</date>
+    <time>13:18:16</time>
+    <contents><target name="mage"><dir name="app"><dir name="code"><dir name="community"><dir name="ArchApps"><dir name="ContactFormDepartments"><dir><dir name="Block"><dir name="Adminhtml"><file name="Department.php" hash="8197ef4a9466a5a1263dde202903901a"/></dir></dir><dir name="Helper"><file name="Data.php" hash="5e91d2aa818f026180d266641637040b"/></dir><dir name="Model"><file name="Observer.php" hash="3e2685fbe3e39397c77c95b361c499ec"/></dir><dir name="etc"><file name="config.xml" hash="7e8b819e6f1c1f52b92d49b08012c5d3"/><file name="system.xml" hash="2efde7aed3184455cdc3bc7e23934954"/></dir></dir></dir></dir></dir></dir><dir name="etc"><dir name="modules"><file name="ArchApps_ContactFormDepartments.xml" hash="b0e49548251eec0a9f551e7ebecf1e07"/></dir></dir><dir name="locale"><dir name="en_US"><file name="ArchApps_ContactFormDepartments.csv" hash="12e8bb914665c1ace1edea9ff72ad98e"/></dir></dir><dir name="design"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="archapps"><file name="contactformdepartments.xml" hash="a8c4ba1e575ecb3c15382dbd8f801ba9"/></dir></dir><dir name="template"><dir name="archapps"><dir name="contactformdepartments"><file name="departments.phtml" hash="2d19bd5671c5c37ce59bb4999b919547"/></dir></dir></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.4.0</min><max>7.0.0</max></php></required></dependencies>
+</package>
